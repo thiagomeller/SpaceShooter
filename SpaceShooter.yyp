@@ -1,7 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":1,},
     {"id":{"name":"spr_shot_player","path":"sprites/spr_shot_player/spr_shot_player.yy",},"order":1,},
     {"id":{"name":"spr_impact01","path":"sprites/spr_impact01/spr_impact01.yy",},"order":0,},
+    {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_enemy01","path":"objects/obj_enemy01/obj_enemy01.yy",},"order":0,},
     {"id":{"name":"obj_shot01","path":"objects/obj_shot01/obj_shot01.yy",},"order":2,},
