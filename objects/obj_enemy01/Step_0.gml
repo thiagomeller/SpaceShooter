@@ -4,5 +4,4 @@
 if (y > room_height + 100)
 {
 	instance_destroy(id, false);
-	show_debug_message("VAZEI");
 }

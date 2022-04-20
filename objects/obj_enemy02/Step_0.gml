@@ -15,14 +15,14 @@ if (y > room_height/3 && posso_me_mover)
 	//Checando de que lado da room que estou 
 	if (x < room_width/2)
 	{
-		show_debug_message("To na esquerda");
+		//show_debug_message("To na esquerda");
 		hspeed = 3;
 //Ao setar essa variável como falsa eu faço com que o evento if aconteça somente um vez
 		posso_me_mover = false;
 	}
 	else
 	{
-		show_debug_message("to na direita")
+		//show_debug_message("to na direita")
 		hspeed = -3;
 		posso_me_mover = false;
 	}

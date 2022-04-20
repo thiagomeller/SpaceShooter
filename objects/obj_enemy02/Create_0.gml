@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+pontos = 20;
+
 //Criando a variável para controle de quando ele pode se mover e quando n pode mais
 posso_me_mover = true;
 

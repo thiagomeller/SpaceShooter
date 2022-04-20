@@ -8,6 +8,6 @@ image_yscale = 3;
 
 //alarm[0] = 4;
 
-show_debug_message("OLA");
+//show_debug_message("OLA");
 
 colors = choose(c_red, c_green, c_blue);

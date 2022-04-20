@@ -90,13 +90,24 @@
 		12.5.1 - Fazer ela ganhar 90°
 	12.6 - Indo na direção do player apenas se ele existir
 	
-13 - Criação procedural
+13 - Criação procedural dos inimigos
+	13.1 - Fazer com que o obj_controller crie inimigos de tempos em tempos
+		13.1.1 - Fazer com que o X e o Y da criação sejam aleatórios 
 
 14 - Criação do controlador
+	14.1 - Ganhando pontos ao destruir os inimigos
 
-
-
-
+15 - Criando o sistema de pontos
+	15.1 - Iniciando a variável de pontos
+	15.2 - Ganhando pontos ao destruir os inimigos
+	15.3 - Rodando o método de ganhar pontos somente se a instancia obj_controller existir
+	15.4 - Fazendo com que inimigos diferentes me deem pontos diferentes
+	15.6 - Criando a variável pontos do inimigos, para darem pontos diferentes
+	
+16 - LEVEL
+	16.1 - Iniciando a variável level
+	16.2 - Exibindo
+	16.3 - Ganhando level quando eu genhar um determinado numero de pontos
 
 
 

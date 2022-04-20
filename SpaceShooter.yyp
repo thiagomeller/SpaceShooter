@@ -5,6 +5,7 @@
     {"id":{"name":"spr_shot02","path":"sprites/spr_shot02/spr_shot02.yy",},"order":3,},
     {"id":{"name":"spr_shine","path":"sprites/spr_shine/spr_shine.yy",},"order":5,},
     {"id":{"name":"spr_shine2","path":"sprites/spr_shine2/spr_shine2.yy",},"order":6,},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":8,},
     {"id":{"name":"spr_background_extra2","path":"sprites/spr_background_extra2/spr_background_extra2.yy",},"order":3,},
     {"id":{"name":"spr_impact01","path":"sprites/spr_impact01/spr_impact01.yy",},"order":0,},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":1,},
