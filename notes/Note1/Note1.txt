@@ -1,4 +1,103 @@
 1 - Criando o player
 	1.1 - Importando as sprites
 	1.2 - Criando o objeto
+	1.3 - Movendo o player com o WASD dentro do Step
+	1.4 - Melhorando o código de movimento
+	
+2 - Ajustando as dimensões da room, da view e da viewport da room
+	2.1 - Criando uma viewport e camera para o jogo
+	2.2 - Ajustando as dimensões para a view ser grande e o viewport menor
+	
+3 - Atirando!
+	3.1 - Importnado as sprites
+	3.2 - Criando o objeto do tiro do player
+	3.3 - Fazendo o tiro ir para cima
+	3.4 - Fazendo o jogador atirar ao apertar espaço
+	3.5 - Dando efeito legal para o tiro
+		3.5.1 - Fazrndo ele nascer grande e depois diminuir
+	3.6 - Destruir o tiro quando ele sair da tela
+	
+4 - Criando o primeiro inimigo
+	4.1 - Importando as sprites
+	4.2 - Criando o obj
+	4.3 - Fazendo ele ir para baixo
+	
+5 - Fazendo o inimigo 01 atirar
+	5.1 - Importando a sprite do tiro
+	5.2 - Criar o objeto do tiro
+	5.3 - Fazendo o tiro ir para baixo
+	5.4 - Atirando
+	5.5 - Dando efeito no tiro
+	
+(Criação de métodos)
+	
+6 - Fazendo o tiro do player acertar o inimigo
+	6.1 - Se destruir ao acertar o inimigo
+	6.2 - Criar o impacto do tiro do player
+	6.3 - Fazendo o tiro desaparcer ao final da animação
+	6.4 - Fazer o tiro NÂO criar o impacto ao sair da room
+	
+7 - Fazendo o tiro do inimigo acertar o player e ser destruido
+	7.1 - Destruindo o tiro do inimigo quando ele sair da room
+	
+8 - Destruindo o inimigo quando ele levar um tiro
+	8.1 - Fazer o tiro do player tbm destruir o inimigo que colodir com ele
+	8.2 - Fazer com que ao ser destruido o inimigo crie uma explosão
+		8.2.1 - Sprite da explosão
+		8.2.2 - Criar o obj da explosão
+		8.2.3 - Fazer o inimigo instanciar a explosão ao morrer
+		8.2.4 - Fazer a explosão se destruir ao final da animação
+		
+9 - Pequenos Ajustes
+	9.1 - Fazendo o inimigo er destruido ao sair da tela
+	9.2 - Deixando o nosso bg melhor (efeito paralax)
+	9.3 - Deixando o tiro mais bonito
+		9.3.1 - Criar a sprite do brilho
+		9.3.2 - Criar o draw event
+		9.3.3 - Se desenhar
+		9.3.4 - Desenhar o brilho
+		9.3.5 - Alterar como a gpu processa a mistura de imagens
+		9.3.6 - Criar variável para mudar as cores do tiro
+		9.3.7 - Usar o lerp para diminuir o tamanho
+	9.4 - Deixando as explosões mais bonitas
+		9.4.1 - Criar o draw event
+		9.4.2 - Desenhar-se
+		9.4.3 - Desenhar-me um pouco maior
+		9.4.4 - Alterar como a gpu processa a mistura de cores
+		9.4.5 - Criar a variável de cores
+		
+10 - Criando o background do nosso jogo
+
+11 - Criando o segundo inimigo
+	11.1 - Importando a sprite
+	11.2 - Criando o obj dele
+	11.3 - Fazendo o inimigo 2 herdar comportamentos do inimigo 1
+	11.4 - Fazendo ele mudar de direção ao chegar ao meio da tela
+		11.4.1 -  checando de que lado da room estou
+			11.4.1.1 -  Falando que estou na esquerda
+			11.4.1.2 - Falando se ele está na direita
+	11.5 - Fazer ele mudar de direção se já passou de 1/3 da tela
+	11.6 - Fazer "11.5" apenas UMA vez
+	11.7 - Fazendo o inimigo criar o proprio tiro
+		11.7.1 - Criar a função atirando para o inimigo02
+	
+12 - Criando o segundo tiro
+	12.1 - Importando sprite
+	12.2 - Criando o obj
+	12.3 - Fazendo ele ser filho do tiro1
+	12.4 - Iniar indo na direção do player
+	12.5 - Apontando para o player
+		12.5.1 - Fazer ela ganhar 90°
+	12.6 - Indo na direção do player apenas se ele existir
+	
+13 - Criação procedural
+
+14 - Criação do controlador
+
+
+
+
+
+
+
 	

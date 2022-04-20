@@ -1,0 +1,3 @@
+O GameMaker entende que todas as sprites são criadas apontando para esquerda.
+Dessa forma, devemos ou realmente apontar as imagens para essa direção se desejamos
+alterar fidedignamente seu angulo ou compensar essa defasagem na criação do objeto
