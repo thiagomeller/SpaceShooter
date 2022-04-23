@@ -1,9 +1,37 @@
 /// @description Criando os inimigos
-// You can write your code in this editor
-var inimigox = irandom_range(64, room_width - 64);
-var inimigoy = irandom_range(-64, -room_height * 1.25);
 
-instance_create_layer(inimigox, inimigoy, "PEnemies", obj_enemy01);
+//Repetindo o mesmo código para criar o efeito de ONDAS de inimigos
+//Usando a função "repeat"
+//Criando o inimigo
+/*
+Usando a "!" para inverter o valor dado, ou seja, o retorno será 1 se 
+instance_exists(obj_enemy01) for false, fazendo com que só execute o if se os inimigos não existirem
+*/
+if (!instance_exists(obj_enemy01))
+{
+	
+	var repetir = 10 * level
+	repeat(repetir)
+	{
+		criar_inimigos();
+	}
+}
 
 //Resetando o alarme
-alarm[0] = room_speed;
+alarm[0] = room_speed * 5;
+
+/*
+if (instance_exists(obj_enemy01))
+{
+	//Se existe
+	//nada nada nada nadaaaaa
+}
+else
+{
+	//Se n existe
+	repeat(10)
+	{
+		criar_inimigos();
+	}
+}
+*/

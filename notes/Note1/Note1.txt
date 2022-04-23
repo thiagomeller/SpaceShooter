@@ -93,6 +93,11 @@
 13 - Criação procedural dos inimigos
 	13.1 - Fazer com que o obj_controller crie inimigos de tempos em tempos
 		13.1.1 - Fazer com que o X e o Y da criação sejam aleatórios 
+	13.2 - Criando inimigos diferentes com base no lvl do jogador
+	13.3 - Criando ONDAS de inimigos
+	13.4 - Criar as ondas apenas se não tiver mais inimigos na tela
+	13.5 - Criar a quantidade de inimigos com base no level
+	13.6 - Impedindo inimigos criados no mesmo lugar
 
 14 - Criação do controlador
 	14.1 - Ganhando pontos ao destruir os inimigos
@@ -108,7 +113,8 @@
 	16.1 - Iniciando a variável level
 	16.2 - Exibindo
 	16.3 - Ganhando level quando eu genhar um determinado numero de pontos
+	16.4 - Dobrando o valor do próximo lvl
 
-
-
+17 - Deixando o tiro do player automático
+	
 	

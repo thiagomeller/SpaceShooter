@@ -37,3 +37,17 @@ x += (right - left) * velocidade;
 //Utilizando a função criada
 atirando();
 
+//Montando uma forma de fazer com que o jogador atire mantendo o espaço pressionado
+//Ativando-o a cada um segundo
+//Ativar somente se não está ativo
+if (keyboard_check(vk_space) && alarm[0] == -1)
+{
+	//Ativando o alarme
+	alarm[0] = room_speed;
+
+	//Criar o tiro
+	instance_create_layer(x, y - sprite_height/3, "PShot", obj_shot_player);
+
+	//Criar o tiro a cada um segundo
+}
+
