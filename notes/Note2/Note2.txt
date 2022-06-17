@@ -1,3 +1,21 @@
 O GameMaker entende que todas as sprites são criadas apontando para esquerda.
 Dessa forma, devemos ou realmente apontar as imagens para essa direção se desejamos
 alterar fidedignamente seu angulo ou compensar essa defasagem na criação do objeto
+
+var tiro_padrao = instance_create_layer(x, y_tiro, "PShot", obj_shot_player);
+				//Tiro indo para a direita
+					var tiro_padrao = instance_create_layer(x, y_tiro, "PShot", obj_shot_player);
+					tiro_padrao.hspeed = 5;
+				//Fazer ele olhar para o lado direto
+					tiro_padrao.image_angle = tiro_padrao.direction - 90;
+				//Tiro indo para a esquerda
+					var tiro_padrao = instance_create_layer(x, y_tiro, "PShot", obj_shot_player);
+					tiro_padrao.hspeed = -5;
+				//Fazer ele olhar para o lado direto
+					tiro_padrao.image_angle = tiro_padrao.direction + 90;
+
+
+gpu_set_blendmode(bm_dest_alpha);
+draw_sprite_ext(spr_shine2, image_index, x, y, image_xscale * 2, image_yscale * 2, image_angle, image_blend, image_alpha - .5);
+//Voltando ao normal
+gpu_set_blendmode(bm_normal);

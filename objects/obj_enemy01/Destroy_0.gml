@@ -7,3 +7,5 @@ if (instance_exists(obj_controller))
 {
 	obj_controller.ganhar_pontos(pontos);
 }
+
+drop(chance);

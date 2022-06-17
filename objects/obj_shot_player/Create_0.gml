@@ -6,6 +6,8 @@ vspeed = -10;
 image_xscale = 3;
 image_yscale = 3;
 
+shine = spr_shine;
+
 //alarm[0] = 4;
 
 //show_debug_message("OLA");

@@ -116,5 +116,67 @@
 	16.4 - Dobrando o valor do próximo lvl
 
 17 - Deixando o tiro do player automático
+	17.1 - Criando o evento para o tiro 
+	
+18 - Dando leveis para o tiro do player
+	18.1 - Criando um sistema de leveis
+	18.2 - Criando o sistema de debug dos leveis
+	18.3 - Fazendo o player dar o segundo tiro no lvl 2
+	
+19 - Criando o segundo tiro do player
+	19.1 - Importando a sprite
+	19.2 - Criando o objeto do tiro 2 
+	19.3 - Deixando como filho de tiro 1
+	19.4 - Ajustando os efeitso do tiro 2
+	19.5 - Criando dois tiros por vez, um em cada asa
+	19.6 - Fazendo o tiro mudar de direção 
+		19.6.1 - Fazendo o tiro ganahr uma direção
+		19.6.2 - Fazendo o tiro inverter
+	19.7 - Criando o terceiro lvl do tiro
+	19.8 - Criando o quarto lvl do tiro
+	19.9 - Criando o quinto lvl do tiro
+	
+20 - Power Up
+	20.1 - Criando a sprite do power up
+	20.2 - Criando o obj do power up
+	20.3 - Craindo a chance de cada power up
+	20.4 - Criar o metodo do lvl up
+	20.5 - Fazer o item colidir com o player e dar o power up
+	20.6 - Destruir o item ao colidir com o player 
+	20.7 - Criando o impacto do tiro ao ser destruido
+	20.8 - Chance de drop pelos inimigos
+	20.9 - Fazendo o tiro de mover
+	20.10 - Dando mais efeito ao PU
+		20.10.1 - Escolhendo a cor com base no efeito
+		
+21 - Escudo 
+	21.1 - Importar sprite
+	21.2 - Criaar obj
+	21.3 - Fazendo o player criar o escudo apertando E
+	21.4 - Criar uma layer para o escudo
+	21.5 - Fazendo o escudo ficar na mesma posição do plauer
+		21.5.1 - Corrigindo o delay no movimento (eu não tive, mudando a ordem de criação do escudo)
+	21.6 - Destruindo os tiros do inimigo com o escudo
+	21.7 - Deixando o escudo um pouco maior
+	21.8 - Animando o escudo
+		21.8.1 - Parar a animação no final dela
+		21.8.2 - Deposi de um tempo voltar a imagem
+			21.8.2.1 - Ao final da animação começar o alarme de 2 segundops
+			21.8.2.2 - Ao execurtar o alaarme ele deve voltar uam imagem 
+			21.8.2.3 - Se eu chegar no index 0 eu me destruo no proximo alarme
+	21.9 - Melhorando os efeitos do escudo 
+		21.9.1 - Dando transparencia para o escudo
+		21.9.2 - Dando blendmode para ele
+		
+22 - Ajustes Gerais
+	22.1 - Arrumando as máscaras de colisão
+	22.2 - Dando colisão entre o player e os inimigos
+	
+23 - Sistema de vida
+	23.1 - Dando vida para o player
+	23.2 - Criando o método dano(); (perde vida)
+	23.3 - Fazendo ele morrer
+	23.4 - Fazendo o player crirar a explosão 
+	23.5 - Exibindo a vida do player
 	
 	

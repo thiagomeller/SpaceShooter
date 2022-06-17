@@ -2,6 +2,9 @@
 // You can write your code in this editor
 vspeed = 3;
 
+//Chance de dropar o item
+chance = 20;
+
 pontos = 10
 
 //Iniciando o alarme com tempo entre 1 e 3 
@@ -21,5 +24,15 @@ atirando = function()
 		if (y >= 0)
 	{
 		instance_create_layer(x - 3, y + sprite_height/3, "PShot", obj_shot01);
+	}
+}
+
+///@method drop(porcentagem_de_drop)
+drop = function(_chance)
+{
+	var valor = random(100);
+	if (valor < _chance)
+	{
+		instance_create_layer(x, y, "Pshot", obj_powerup);
 	}
 }

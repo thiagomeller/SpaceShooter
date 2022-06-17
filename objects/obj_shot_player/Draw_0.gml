@@ -9,6 +9,6 @@ draw_self();
 //Desenhando o brilho
 //Alterando como o video trata as cores
 gpu_set_blendmode(bm_add);
-draw_sprite_ext(spr_shine, image_index, x, y, image_xscale, image_yscale, image_angle, colors, 0.5);
+draw_sprite_ext(shine, image_index, x, y, image_xscale, image_yscale, image_angle, colors, 0.5);
 //Voltando ao normal
 gpu_set_blendmode(bm_normal);
