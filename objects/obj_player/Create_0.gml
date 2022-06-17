@@ -6,9 +6,13 @@ velocidade = 5;
 //Criando uma função 
 atirando = function()
 {
-	var fire = keyboard_check_pressed(vk_space);
-		if (fire)
-	{
-		instance_create_layer(x, y - sprite_height/3, "PShot", obj_shot_player);
-	}
+		if (keyboard_check(vk_space) && alarm[0] == -1)
+		{
+			//Ativando o alarme
+			alarm[0] = room_speed;
+
+			//Criar o tiro
+			instance_create_layer(x, y - sprite_height/3, "PShot", obj_shot_player);
+//Criar o tiro a cada um segundo
+		}
 }
