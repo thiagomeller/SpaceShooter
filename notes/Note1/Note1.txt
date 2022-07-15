@@ -178,5 +178,6 @@
 	23.3 - Fazendo ele morrer
 	23.4 - Fazendo o player crirar a explosão 
 	23.5 - Exibindo a vida do player
+	23.6 - Fazendo o player perder vida ao trombar com os inimigos
 	
 	

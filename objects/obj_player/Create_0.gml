@@ -119,7 +119,7 @@ lvl_up = function(_chance)
 dano = function() 
 {
 	vida--;
-	if (vida <= 0) 
+	if (vida < 0) 
 		{
 			instance_destroy();
 		}
