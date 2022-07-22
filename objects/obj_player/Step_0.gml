@@ -8,19 +8,26 @@ left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 shield = keyboard_check_pressed(ord("E"));
 
-//Criando o escudo
-if (shield) {
+//Criando o escudo, SE eu tenho um alvo válido e SE eu tenho escudos e SE eu não estiver com escudo já 
+if (shield && qnt_escudo > 0 && !instance_exists(obj_shield)) {
 	
 	var escudo = instance_create_layer(x, y, "Shield", obj_shield);
 	
 	//Identificando o alvo
 	escudo.alvo = id;
+	
+	//Diminuindo a quantidade de escudo
+	qnt_escudo--;
 }
 
 
 //Movendo com base nos resultados das contas booleanas, então, multiplico pela variavél da velocidade
 y += (down - up) * velocidade;
 x += (right - left) * velocidade;
+
+//Limitando a movimentação do player
+x = clamp(x, 60, 1860);
+y = clamp(y, 64, 1024);
 
 //Utilizando a função criada
 atirando();

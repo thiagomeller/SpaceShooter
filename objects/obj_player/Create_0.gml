@@ -8,11 +8,17 @@
 //Sistama de vida
 vida = 3;
 
+//Valocidade inicial o player
 velocidade = 5;
 
+//Cadência de tiro
 espera_tiro = room_speed;
 
+//Level do tiro
 lvl_tiro = 1;
+
+//Quantidade de escudos
+qnt_escudo = 3;
 
 
 //Criando uma função do tiro geral 
@@ -95,15 +101,24 @@ lvl_up = function(_chance)
 		{
 		//Aumentando o level do tiro se for menor que 5
 		lvl_tiro++;
-		}	
-	}
-	else if (_chance >= 45)
-	{
-		if (espera_tiro > 20)
-		{
+		}
+		//Senão, ganha pontos
+		else {
+			//Ganhando pontos
+			GanharPontos(100);
+			}
+		}
+		
+	else if (_chance >= 45) {
+		
+		if (espera_tiro > 15){
 		//Diminuindo a espera do tiro
 		espera_tiro *= .9;
 		}
+		else {
+			GanharPontos(10);	
+		}
+		
 	}
 	else
 	{
@@ -112,16 +127,23 @@ lvl_up = function(_chance)
 		//Aumentando a velocidade do player
 		velocidade += .05;
 		}
+		else {
+			GanharPontos(10);	
+		}
 	}
 }
+
 
 ///@method dano();
 dano = function() 
 {
-	vida--;
-	if (vida < 0) 
-		{
-			instance_destroy();
-		}
+	if (vida > 0) {
+		vida--;
+		Screenshake(5 / (vida + 1));
+	}
+	else {
+		instance_destroy();
+		Screenshake(25);
+	}
 }
 

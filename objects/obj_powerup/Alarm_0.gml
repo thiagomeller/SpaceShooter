@@ -5,7 +5,7 @@
 image_alpha -= .1;
 
 //Destruindo-o
-if (image_alpha <= .4) {
+if (image_alpha <= 0) {
 	instance_destroy(id, false);	
 }
 
